@@ -31,7 +31,7 @@ stages:
       displayName: 'Maven Package'
       inputs:
         mavenPomFile: 'app/pom.xml'
-
+        codeCoverageToolOption: Cobertura
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
       inputs:
